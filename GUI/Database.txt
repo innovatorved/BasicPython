@@ -1,0 +1,6 @@
+Ved Prakash Gupta	18	7007868719	vedgupta04@yahoo.com	Male	YES	tech Student	
+Ansh Gupta	18	7317479266	anshgmay@gmail.com	Male	YES	tech Student		
+Neha Kushwaha	20	7755011883	kushwahaneha243@gmail.com	Female	YES	tech Student
+	
+gtrh	tr	asdfghjkl;	hdfnhn	Male	YES	non_tech Student	
+gifgig	joj;	1023654789	ykgb	Male	YES	non_tech Student	
