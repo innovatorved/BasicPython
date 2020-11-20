@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function s()
+		{
+			//alert("done");
+			var data = document.getElementById("radius").value;
+			var data = Number(data);
+			var area = 2 * 3.14 * data;
+			alert("Area of Circle: "+area);
+			document.getElementById("ch").innerHTML = "Area of Circle: "+area;
+		}
+		function w()
+		{
+			//alert("done");
+			document.getElementById("ch").innerHTML = "";
+		}
+	</script>
+	<title>Area of Circle</title>
+</head>
+<body>
+	<h1>Find Area of Circle</h1>
+	<br/>
+	<br/>
+	<h2>Enter the radius of circle:</h2>
+	<input type="txt" id="radius"/>
+	<input type="Button" value="Click" onclick="s()"/>
+	<br/>
+	<h3 id = "ch"  onmouseover="w()"></h3>
+</body>
+</html>

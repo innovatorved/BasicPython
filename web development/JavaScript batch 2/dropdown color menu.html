@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#ch
+		{
+			height: 100px;
+			width: 300px;
+			border: 2px solid white;
+			margin: 20px auto;
+		}
+	</style>
+	<script type="text/javascript">
+		function co()
+		{
+			var d = document.getElementById("col").value;
+			//alert(d);
+			var ch = document.getElementById("ch")
+			ch.style.border = "2px solid " + d;
+			ch.innerHTML = "This is div box";
+			ch.style.color = d;
+			ch.style.fontSize = "40px";
+		}
+
+	</script>
+	<title>Dropdown colo list</title>
+</head>
+<body>
+	Select the color:
+	<select name="color" id="col">
+		<option value= "Black" selected disabled>Color</option>
+		<option value= "Red">Red</option>
+		<option value= "Green">Green</option>
+		<option value= "Orange">Orange</option>
+		<option value= "Blue">Blue</option>
+		<option value= "Pink">Pink</option>
+		<option value= "Yellow">Yellow</option>
+		<option value= "Grey">Grey</option>
+		<option value= "Violet">Violet</option>
+	<br/>
+	<br/>
+	<input type="Button" value="Submit for color change" onclick="co()"/>
+	<div id="ch">
+		
+	</div>
+</body>
+</html>

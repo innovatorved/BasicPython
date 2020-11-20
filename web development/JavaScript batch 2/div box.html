@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#div
+		{
+			height: 100px;
+			width: 300px;
+			border: 2px solid skyblue;
+			margin: 20px auto;
+
+		}
+	</style>
+	<script type="text/javascript">
+		//show and hide div box  with single click on a button
+		var i = 0;
+		function box()
+		{
+			if(i==0)
+			{
+				i++;
+				var div = document.getElementById("div");
+				div.innerHTML = "This Is Div box";
+				div.style.color = "orange";
+				div.style.fontSize = "40px";
+			}
+			else
+			{
+				document.getElementById("div").innerHTML = "";
+				i=0;
+			}
+
+		}
+
+	</script>
+	<title>Div</title>
+</head>
+<body>
+	<input type="Button" value="Click me" onclick="box()"/>
+	<br/>
+	<br/>
+	<div id="div">
+		
+
+	</div>
+
+</body>
+</html>

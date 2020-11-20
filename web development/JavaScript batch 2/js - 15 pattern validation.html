@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		//patternn Validation
+		function str()
+		{
+			//alert("done");
+			//store regular expression to a variable
+			// change the meaning of // to /^[A-Za-z]{}$/;
+			var pn = /^[A-Za-z]{3,10}$/;
+			var name = document.getElementById("na").value;
+			if(!pn.test(name))
+			{
+				//alert("Name is Invalid")
+				document.getElementById("ch").innerHTML = "Name is Invalid";
+			}
+			else
+			{
+				//alert("Name is Valid")
+				document.getElementById("ch").innerHTML = "Name is Valid";
+			}
+		}
+	</script>
+	<title>Pattern Validation</title>
+</head>
+<body>
+	Name:
+	<input type="txt" id="na" onkeypress="str()">
+	<span id = "ch" style="color:skyblue"></span>
+	<br/>
+	<input type="Button" value= "Check kro" onclick="str()">
+
+</body>
+</html>

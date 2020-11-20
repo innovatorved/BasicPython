@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function check()
+		{
+			//alert("heyy");
+			//window.alert("x");
+			var t = 0;
+			var ch = [/^[a-zA-Z0-9.-_]+\.+p+n+g$/ , /^[a-zA-Z0-9.-_]+\.+d+o+c$/ , /^[a-zA-Z0-9.-_]+\.+p+d+f$/ , /^[a-zA-Z0-9.-_]+\.+j+p+g$/];
+			//window.alert("x");
+			var x = document.getElementById("bnn").value;
+			//window.alert(x);
+			for(var i in ch)
+			{
+				if (!ch[i].test(x)) 
+				{
+					//alert("no");
+				}
+				else
+				{
+					//alert("yes");
+					t=1;
+				}
+			}
+			if (t==1)
+			{
+				alert("File type Supported");
+				document.getElementById("sup").innerHTML ="<br/><br/>File type Supported";
+			}
+			else
+			{
+				alert("File Type does not supported");
+				document.getElementById("sup").innerHTML = "<br/><br/>These Extension's are Supported- <br/> .pdf <br/> .png <br/> .doc <br/> .jpg";
+			}
+		}
+	</script>
+	<title>Extension Validation</title>
+</head>
+<body>
+	Enter the file name with extennsion: 
+	<input type="txt" id="bnn">
+	<br/>
+	<br/>
+	<input type="Button" value="check it" onclick="check()">
+	<div id="sup">
+		
+	</div>
+</body>
+</html>

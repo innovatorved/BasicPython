@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function em()
+		{
+			var ch =/^[a-zA-Z0-9.-_]+@[a-zA-Z.-]+\.[a-zA-Z]{2,5}$/;
+			var emai = document.getElementById("email").value;
+			//alert(emai);63
+			if (!ch.test(emai)) 
+			{
+				alert("pls check the Email");
+			}
+			else
+			{
+				alert("Correct Email");
+			}
+		}
+
+
+	</script>
+	<title>Email Id Validation</title>
+</head>
+<body>
+Enter Your Email Id: 
+<input type="txt" id="email"/>
+<br/>
+<input type="Button" value="click me" onclick="em()"/>
+</body>
+</html>

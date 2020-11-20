@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#slider
+		{
+			height: 400px;
+			width: 700px;
+			border: 2px solid skyblue;
+			margin: 40px auto;
+
+		}
+	</style>
+	<script type="text/javascript">
+		var img = ["1.jpg" , "2.jpg" , "3.jpg" , "4.jpg" ];
+		var i = 0;
+
+
+		function slide()
+		{
+			//alert("hi");
+			var div = document.getElementById("slider");
+			div.style.backgroundImage = "url('images/"+img[i]+"')";
+			//css background-image:url("path");
+			//in js backgroungImage="url('')";
+			i++;
+			if(img.length==i)
+			{
+				i=0;
+			}
+			window.setTimeout("slide()",1000);
+		}
+	</script>
+	<title>Slider</title>
+</head>
+<body onload="slide()">
+
+	<div id="slider">
+	
+
+	</div>
+</body>
+</html>

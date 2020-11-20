@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="name">
+<head>
+	<title>ng-filter</title>
+	<script type="text/javascript" src="lib/Angular_min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+	<header ng-include='header.html'></header>
+	<h2>Example of MVC model</h2>
+	<h3>Search Bar</h3>
+	<div ng-controller="nameCon">
+		<input type="text" ng-model="search">
+		<h3>filter - orderBy</h3>
+		<ol type="a">
+			<div ng-repeat='friend in detail_of_friend | orderBy:"name" | filter:search'>
+			<li>{{friend.name}} - {{friend.Salery | currency}}</li>
+			</div>
+		</ol>
+	</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		//patternn Validation
+		function num()
+		{
+			//alert("done");
+			//store regular expression to a variable
+			// change the meaning of // to /^[A-Za-z]{}$/;
+			var pn = /^[0-9+]{13}$/;
+			var number = document.getElementById("na").value;
+			if(!pn.test(number))
+			{
+				//alert("Mobile No. glt hai");
+				document.getElementById("ch").innerHTML = "Number is Invalid";
+				document.getElementById("na").style.border ="2px dotted red";
+			}
+			else
+			{
+				alert("Mobile number shi hai");
+				document.getElementById("ch").innerHTML = "Number is Valid";
+				document.getElementById("na").style.border ="";
+
+			}
+		}
+	</script>
+	<title>Pattern Validation</title>
+</head>
+<body>
+	Mobile Number:
+	<input type="txt" id="na" onkeypress="num()"/>
+	<span id = "ch" style="color:skyblue"></span>
+	<br/>
+	<input type="Button" value= "Go" onclick="num()"/>
+
+</body>
+</html>

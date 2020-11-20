@@ -1,0 +1,47 @@
+<html>
+<head>
+	<script>
+		var dat = window.prompt("Enter 1 for Sum\nEnter 2 for Subtract\nEnter 3 for Multiply\nEnter 4 for Divide\n\nEnter ur Choice:\t ");
+		var first = window.prompt("Enter First Number:");
+		var sec = window.prompt("Enter Secound Number:");
+		var first = Number(first)
+		var sec = Number(sec)
+		var out;
+
+		if (dat ==1) 
+		{
+			var out = first + sec ;
+			window.alert("Sum of\t"+first+"\tand\t"+sec+"\tis:\t"+out);
+
+			document.write("\nSum is:\t"+out+"\n");
+		}
+		else if (dat ==2) 
+		{
+			var out = first - sec ;
+			window.alert("Subtraction of\t"+first+"\tand\t"+sec+"\tis:\t"+out);
+
+			document.write("\nSubtraction is:\t"+out+"\n");
+		}
+		else if (dat ==3) 
+		{
+			var out = first * sec ;
+			window.alert("Multiply of\t"+first+"\tand\t"+sec+"\tis:\t"+out);
+
+			document.write("\nMultiply is:\t"+out+"\n");
+		}
+		else if (dat ==4) 
+		{
+			var out = first / sec ;
+			window.alert("Divide of\t"+first+"\tto\t"+sec+"\tis:\t"+out);
+
+			document.write("\nDivide is:\t"+out+"\n");
+		}
+
+	</script>
+	<title>Task</title>
+
+</head>
+<body>
+
+</body>
+</html>

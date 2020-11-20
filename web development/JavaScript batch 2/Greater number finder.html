@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function don()
+		{
+			//window.alert("done");
+			var f = document.getElementById("f").value;
+			var s = document.getElementById("s").value;
+			var f = Number(f);
+			var s = Number(s);
+			if (f>s) 
+			{
+				window.alert("Greatest number is: "+f);
+				document.getElementById("ch").innerHTML = "Greatest number is: "+f;
+
+			}
+			else if(s>f)
+			{
+				window.alert("Greatest number is: "+s);
+				document.getElementById("ch").innerHTML = "Greatest number is: "+s;
+			}
+			else if(s==f)
+			{
+				window.alert("Both Numbers are equal");
+				document.getElementById("ch").innerHTML = "Both Numbers are equal";
+			}
+		}
+
+
+	</script>
+	<title>Find Greatest Number</title>
+</head>
+<body>
+	<h1>Enter Two number to find which num is Greater</h1>
+	<br/>
+	<br/>
+
+	Enter First Number:
+	<input type="txt" id="f">
+	<br/>
+	Enter Secound Number:
+	<input type="txt" id="s">
+	<br/>
+	<input type="Button" value="Click" onclick="don()">
+	<br/>
+	<h3 id = "ch"></h3>
+</body>
+</html>

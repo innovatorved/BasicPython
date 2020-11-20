@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="nextin">
+<head>
+	<title>ng-include pp-1</title>
+	<script type="text/javascript" src="lib/Angular_min.js"></script>
+	<script type="text/javascript" src="lib/angular.route.min.js"></script>
+	<script type="text/javascript" src="application2.js"></script>
+</head>
+<body>
+	<div ng-controller = "nextControl">
+		{{msg}}
+		<ng-include src="'header.html'"></ng-include>
+	</div>
+</body>
+</html>

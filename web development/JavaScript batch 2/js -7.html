@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		//WAP to add two num usin function and event
+		function add()
+		{
+			//alert("heyy!");	
+			var fir = document.getElementById("f").value;
+			var sec = document.getElementById("s").value;
+			fir = Number(fir);
+			sec = Number(sec);
+			
+			var sum = fir + sec;
+			//document.write("Sum of "+fir+" and "+sec+" is "+sum);
+			//window.alert("Sum of "+fir+" and "+sec+" is "+sum);
+			document.getElementById("res").value = sum;
+			document.getElementById("h").innerHTML = sum;
+
+		}
+	</script>
+	<title>New task</title>
+</head>
+<body>
+ 	Enter First Number:
+ 	<input type="txt" id="f"/>
+ 	<br/>
+ 	Enter Secound Number:
+ 	<input type="txt" id="s"/>
+ 	<br/>
+	<input type="Button" value="Add" onclick="add()"/>
+
+	<br/>
+ 	Result:
+ 	<input type="txt" id="res" readonly="true" />
+ 	<br/>
+ 	<h1 id = "h"></h1>
+
+ </body>
+ </body>
+</body>
+</html>

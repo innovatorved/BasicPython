@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		//length validation
+		function ch()
+		{
+			var mob = document.getElementById("num").value;
+			if (mob.length==10) 
+			{
+				alert("Valid Number Mobile num were submited");
+			}
+			else
+			{
+				alert("pls check the Number");
+			}
+		}
+	</script>
+	<title>Length Validation</title>
+</head>
+<body>
+	Enter ur mobile Number:
+	<input type="txt" id="num">
+	<br/>
+	<input type="Button" value="Submit" onclick="ch()">
+</body>
+</html>

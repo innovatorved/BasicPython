@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		//required validation
+		function run()
+		{
+			//alert("hii");
+			var name = document.getElementById("name").value;
+			if (name == "") 
+			{
+				document.getElementById("name").style.border = "2px solid purple";
+				document.getElementById("sp").innerHTML="!";
+				document.getElementById("sp").style.color = "green";
+				document.getElementById("sp").style.backgroundColor = "lightblue";
+			}
+			else
+			{
+				document.getElementById("name").style.border = "";
+				document.getElementById("sp").innerHTML="";
+
+			}
+		}
+	</script>
+	<title>Name</title>
+</head>
+<body>
+	Enter Your Name:
+	<input type="txt" id="name"/>
+	&nbsp;
+	<span id="sp" style="font-size: 20px; color: black">
+		<!--span is a inline level element -->
+		<!--&nbsp for space -->
+	</span>
+	<br/>
+	<input type="Button" value="Check" onclick="run()">
+</body>
+</html>

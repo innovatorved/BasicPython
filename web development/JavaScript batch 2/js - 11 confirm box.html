@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function sw()
+		{
+			//alert("ya");
+			var status = window.confirm("Are u sure You want to Swap Between Worlds!");
+			//alert(status);
+			var v = document.getElementById("v").innerText;
+			var f = document.getElementById("f").innerText;
+
+			if (status == true)
+			{
+				document.getElementById("v").innerHTML = f;
+				document.getElementById("f").innerHTML = v;
+				alert("Swaping Done");
+			}
+			else
+			{
+				alert("Cancel Operation");
+			}
+		}
+
+	</script>
+	<title></title>
+</head>
+<body>
+	<h1 id="v" onmouseover="sw()">Ved Prakash Gupta</h1>
+	<br/>
+	<h1 id = "f">Founder And CEO of NEXT INNOVATION</h1>
+	<br/>
+	<input type="button" value="Swap" onclick="sw()"/>
+
+</body>
+</html>

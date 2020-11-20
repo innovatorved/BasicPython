@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Declaration of array in ng-init and loop by ng-repeat</title>
+	<script type="text/javascript" src="lib/Angular_min.js"></script>
+</head>
+<body>
+	<div ng-init = "friends = ['Ved Gupta' , 'Sudhanshu Srivastava' , 'Ajay Sharma' , 'Anchal' , 'Amit Prajapati']">
+		<h2>My Friends Name:</h2>
+		<ul type="square" ng-repeat="friend in friends">
+			<li>{{friend}}</li>
+		</ul>
+	</div>
+</body>
+</html>

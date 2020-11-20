@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function sub()
+		{
+			//alert("Done");
+			var nam = document.getElementById("n").value;
+			var ag = document.getElementById("a").value;
+			var ema = document.getElementById("e").value;
+			var num = document.getElementById("n").value;
+			var ge = document.getElementById("g").value;
+
+			window.alert(nam + "\n" +ag + "\n" + ema + "\n" +num + "\n" +ge);
+			document.getElementById("write").value = nam + "\n" +ag + "\n" + ema + "\n" +num + "\n" +ge;
+			document.getElementById("aa").innerHTML =  nam + "<br/>" +ag + "<br/>" + ema + "<br/>" +num + "<br/>" +ge;
+			
+		}
+
+
+	</script>
+	<title>Registration</title>
+</head>
+<body>
+	<h1>User Registration</h1>
+	<br/>
+	Enter Your Name:
+	<input type="Name" id="n" placeholder="Ved Gupta"/>
+
+	<br/>
+	Enter your Age in Year:
+	<input type="Age" id="a" placeholder="2000"/>
+
+	<br/>
+	Enter your Email:
+	<input type="Email" id="e" placeholder="nextin.520@gmail.com"/>
+
+	<br/>
+	Enter Your Mobile Number:
+	<input type="Mobile" id="u" placeholder="+917007868719"/>
+
+	<br/>
+	Enter Your Gender:
+	<input type="Gender" id="g" placeholder="Male"/>
+
+	<br/>
+	<br/>
+	<input type = "button" value="click for Submit" onclick="sub()"/>
+
+	<br/>
+	<br/>
+
+	<input type="txt" id="write" readonly="true" />
+	<br/>
+	<h3 id="aa"></h3>
+</body>
+</body>
+</html>

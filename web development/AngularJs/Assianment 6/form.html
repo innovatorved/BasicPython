@@ -1,0 +1,22 @@
+<div class="content">
+	<h1 style="padding-bottom: 50px; font-size: 42px; color: #C70039;">Registration Form - </h1>
+	<form name="contactForm" novalidate>
+		<input type="txt" name="name" placeholder="Enter Your Name" ng-model="contact.name" ng-minlength = "3" ng-required="true"/>
+		<span ng-show="contactForm.name.$touched && contactForm.name.$error.minlength ">pls fill more than 3 char !</span>
+
+		<input type="Number" name="age" placeholder="Enter Your Age :" ng-model="contact.age" ng-required="true" ng-maxlength="2" />
+		<span ng-show="contactForm.age.$touched && contactForm.age.$error.maxlength ">pls Enter your Correect Age !</span>
+
+		<input type="Number" name="Number" placeholder="Enter Your Moble Number :" ng-model="contact.num" ng-minlength = "10" ng-maxlength="15" ng-required="true"/>
+		<span ng-show="contactForm.Number.$touched && contactForm.Number.$error.minlength " >pls Enter minimum 10 num !</span>
+		<span ng-show="contactForm.Number.$touched && contactForm.Number.$error.maxlength " >pls doesn't Enter More than 15 num !</span>
+
+		<input type="email" id="email" name="email" placeholder="Enter Your Email" ng-model="contact.email" ng-required="true" />
+		<span ng-show="contactForm.email.$touched && contactForm.email.$error.email ">pls Enter Correct Mail Address Email : example@info.com !</span>
+
+		<input type="Address" name="address" placeholder="Enter Your Address :" ng-model="contact.add" ng-minlength="15" ng-required="true"/>
+		<span ng-show="contactForm.address.$touched && contactForm.address.$error.minlength ">pls Enter Correct Email Address !</span>
+
+		<input type="submit" value="Send"/>
+	</form>
+</div>

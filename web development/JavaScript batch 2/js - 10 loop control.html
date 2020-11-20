@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		//loop control
+		//print a table
+		function tab()
+		{
+			var val = document.getElementById("num").value;
+			//alert(val);
+			for (var x=0; x<=10; x++) 
+			{
+				document.write(val*x);
+				document.write("<br/>");
+			}
+		}
+
+	</script>
+	<title></title>
+</head>
+<body>
+	Enter a num to find table:
+	<input type="number" id="num"/>
+	<br/>
+	<br/>
+	<input type="button" value="Touch Me" onclick="tab()"/>
+</body>
+</html>

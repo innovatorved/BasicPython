@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="detail">
+<head>
+	<title>Table</title>
+	<script type="text/javascript" src="lib/Angular_min.js"></script>
+	<script type="text/javascript" src="table.js"></script>
+</head>
+<body>
+	<div ng-controller="details">
+		<h2>Details of Friend</h2>
+		<input type="txt" placeholder="Search" ng-model="search">
+		<span style="font-size: 9px;">Search for person ?</span>
+		<div>
+		</div>
+		<table border="1" style="margin:20px auto">
+			<tr>
+				<th>Name</th>
+				<th>Color</th>
+				<th>Salery</th>
+				<th>MobileNo</th>
+				<th>Gender</th>
+			</tr>
+			<tr ng-repeat='friend in detail_of_friend | orderBy:"name" | filter:search' border="0">
+				<td>{{friend.name}}</td>
+				<td>{{friend.color}}</td>
+				<td>{{friend.Salery | currency}}</td>
+				<td>{{friend.MobileNo}}</td>
+				<td>{{friend.Gender}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function check()
+		{
+			var no = document.getElementById("num").value;
+			var no = Number(no);
+			if (no % 2 ==0)
+			{
+				window.alert(no + " is " + "Even");
+				document.getElementById("wr").innerHTML = "Even"
+			}
+			else
+			{
+				window.alert(no + " is " + "Odd");
+				document.getElementById("wr").innerHTML = "Odd"
+			}	
+		}
+
+	</script>
+	<title></title>
+</head>
+<body>
+	Enter a number to find num is Even or Odd:
+	<input type="txt" id="num"/>
+	<br/>
+	<input type="button" value="Click" onclick = "check()"/>
+	<br/>
+	<br/>
+	<input type="txt" id="wr" readonly="true">
+</body>
+</html>
