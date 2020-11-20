@@ -1,0 +1,8 @@
+impt python hacks
+downloading pyttsx3 if any error occurs
+
+pip install pyttsx3==2.71
+
+
+
+pyAudio module not downloaded directly first download there wheel file and install it
