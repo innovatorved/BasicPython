@@ -1,0 +1,12 @@
+<div style="padding-bottom: 35px; font-family:georgia,garamond,serif; ">
+	<div style=" padding-top: 30px;">
+		<h1 style="padding-bottom: 25px; padding-left:200px ; color: #B7950B;">Technologies i Like - </h1>
+		<div style="text-align: center;">
+			<input type="txt" name="movie" ng-model="movie" placeholder="Search for tech !" style="width: 500px">
+		<ul ng-repeat = "movie in tech_info | orderBy : name | filter : movie" style="padding-top: 50px">
+			<li><h1 style="color: #087963; ">{{movie.name}}</h1><br><br>{{movie.p1}}<br>{{movie.p2}}<br>{{movie.p3}}</li>
+			<hr width="70%">
+		</ul>
+		</div>
+	</div>
+</div>

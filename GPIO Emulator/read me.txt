@@ -1,0 +1,5 @@
+Step 1: Copy "GPIO Emulator" Folder and paste at Desktop
+Step 2: Open IDLE > Files > Open > Desktop > GPIO Emulator > Select simulator01.py
+Step 3: Write your python code and run
+
+Note: tkinter module must be installed.
