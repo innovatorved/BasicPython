@@ -11,5 +11,3 @@ print(l)
 
 l.append(input('enter the first name: '))
 print(l)
-
-
